@@ -1,0 +1,83 @@
+.main-page {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.background-video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1; /* Ensure the video is behind other content */
+}
+
+.logo-container {
+	display: flex;
+	align-items: center; /* Center the image vertically */
+}
+.logo-img {
+	display: flex;
+	align-items: center; /* Center the image vertically */
+	justify-content: center;
+	margin: 5vh; /* Optional: some padding around the image */
+	height: 15vh;
+	width: 15vh;
+	min-height: 100px;
+	min-width: 100px;
+	overflow: hidden;
+	border-radius: 50%;
+	border-width: 10px;
+	border-color: black;
+}
+.logo-text {
+	align-items: center;
+}
+
+.logo-container p {
+	margin: 0;
+	color: rgb(236, 224, 224);
+}
+.logo {
+	height: 100%;
+}
+
+
+.links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: auto;
+
+	padding: 20px;
+}
+.links p {
+	color: rgb(236, 224, 224);
+	white-space: nowrap;
+}
+.social-links {
+	display: flex;
+	align-items: left;
+
+	width: 50%;
+	padding-left: 10px;
+}
+.social-img {
+	width: 75px;
+	height: 75px;
+	margin: 0px 10px;
+
+	transition: transform 0.3s ease;
+}
+.social-img:hover {
+	transform: scale(1.2);
+}
+
+.token-links {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+
+	padding-right: 10px;
+	width: 50%;
+}
